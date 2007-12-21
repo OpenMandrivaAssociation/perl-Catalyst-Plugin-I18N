@@ -21,6 +21,7 @@ BuildRequires:	perl(Catalyst) >= 2.99
 BuildRequires:	perl(I18N::LangTags::Detect)
 BuildRequires:	perl(Locale::Maketext::Lexicon)
 BuildRequires:	perl(Locale::Maketext::Simple)
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 
 %description
