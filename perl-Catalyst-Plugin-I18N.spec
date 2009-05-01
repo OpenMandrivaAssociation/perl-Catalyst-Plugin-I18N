@@ -1,6 +1,6 @@
 %define module	Catalyst-Plugin-I18N
 %define name	perl-%{module}
-%define version 0.08
+%define version 0.09
 %define release %mkrel 1
 
 Summary:	I18N for Catalyst
