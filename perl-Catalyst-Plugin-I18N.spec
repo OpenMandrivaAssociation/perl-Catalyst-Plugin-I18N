@@ -16,8 +16,11 @@ BuildRequires:	perl(I18N::LangTags::Detect)
 BuildRequires:	perl(Locale::Maketext::Lexicon)
 BuildRequires:	perl(Locale::Maketext::Simple)
 BuildRequires:	perl(MRO::Compat)
+
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
+
+Requires:	perl(Locale::Maketext::Lexicon)
 
 %description
 Supports mo/po files and Maketext classes under your applications I18N
@@ -28,10 +31,10 @@ namespace.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor --skipdeps
-%__make
+%make
 
 %check
-%__make test
+%make test
 
 %install
 rm -rf %{buildroot}
