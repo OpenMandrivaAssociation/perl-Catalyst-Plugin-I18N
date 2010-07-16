@@ -14,7 +14,7 @@ Source0:    http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{up
 BuildRequires:	perl(Catalyst) >= 2.99
 BuildRequires:	perl(I18N::LangTags::Detect)
 BuildRequires:	perl(Locale::Maketext::Lexicon)
-BuildRequires:	perl(Locale::Maketext::Simple)
+BuildRequires:	perl(Locale::Maketext::Simple) >= 0.190.0
 BuildRequires:	perl(MRO::Compat)
 
 BuildArch:	noarch
