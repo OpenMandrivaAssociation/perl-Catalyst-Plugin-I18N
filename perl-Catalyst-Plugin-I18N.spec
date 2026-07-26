@@ -1,15 +1,13 @@
 %define upstream_name	 Catalyst-Plugin-I18N
-%define upstream_version 0.10
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.10
+Release:	7
 
 Summary:	I18N for Catalyst
 License:	GPL
 Group:		Development/Perl
 Url:		https://dev.catalyst.perl.org/repos/Catalyst/Catalyst-Plugin-I18N/trunk
-Source0:	https://cpan.metacpan.org/authors/id/B/BO/BOBTFISH/Catalyst-Plugin-I18N-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BO/BOBTFISH/Catalyst-Plugin-I18N-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ Supports mo/po files and Maketext classes under your applications I18N
 namespace.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor --skipdeps
@@ -61,9 +59,7 @@ perl Makefile.PL INSTALLDIRS=vendor --skipdeps
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.90.0-1mdv2010.0
 + Revision: 406263
-- rebuild using %%perl_convert_version
-
-* Mon May 04 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.09-1mdv2010.0
+- rebuild using %0.10 Mon May 04 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.09-1mdv2010.0
 + Revision: 371665
 - update to new version 0.09
 
